@@ -7,11 +7,9 @@ import java.util.Optional;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.HasComponents;
 import com.vaadin.flow.component.dependency.JsModule;
-import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.tabs.Tab;
-import com.vaadin.flow.component.tabs.TabVariant;
 import com.vaadin.flow.component.tabs.Tabs;
 import com.vaadin.flow.component.tabs.TabsVariant;
 import com.vaadin.flow.router.RouteConfiguration;
@@ -19,8 +17,7 @@ import com.vaadin.flow.router.RouterLink;
 import com.vaadin.flow.server.PWA;
 import com.vaadin.flow.theme.Theme;import com.vaadin.flow.theme.lumo.Lumo;
 
-import edu.pucmm.eict.vaadin14.views.main.MainView;
-import edu.pucmm.eict.vaadin14.views.empty.EmptyView;
+import edu.pucmm.eict.vaadin14.views.inicio.InicioView;
 import edu.pucmm.eict.vaadin14.views.masterdetail.MasterDetailView;
 import edu.pucmm.eict.vaadin14.views.cardlist.CardListView;
 import edu.pucmm.eict.vaadin14.views.form.FormView;
@@ -53,7 +50,7 @@ public class MainView extends AppLayout {
 
     private static Tab[] getAvailableTabs() {
         final List<Tab> tabs = new ArrayList<>();
-        tabs.add(createTab("Inicio", EmptyView.class));
+        tabs.add(createTab("Inicio", InicioView.class));
         tabs.add(createTab("Master-Detail", MasterDetailView.class));
         tabs.add(createTab("Card List", CardListView.class));
         tabs.add(createTab("Form", FormView.class));

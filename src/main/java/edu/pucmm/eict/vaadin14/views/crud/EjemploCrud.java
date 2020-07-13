@@ -15,10 +15,11 @@ import com.vaadin.flow.data.renderer.NativeButtonRenderer;
 import com.vaadin.flow.router.Route;
 import edu.pucmm.eict.vaadin14.data.entity.Estudiante;
 import edu.pucmm.eict.vaadin14.data.service.EstudianteService;
+import edu.pucmm.eict.vaadin14.views.layouts.MainLayout;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 
-@Route("ejemplo-crud-estudiante")
+@Route(value = "ejemplo-crud-estudiante", layout = MainLayout.class)
 public class EjemploCrud extends VerticalLayout {
 
     //

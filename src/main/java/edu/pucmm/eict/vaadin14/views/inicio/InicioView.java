@@ -1,9 +1,8 @@
-package edu.pucmm.eict.vaadin14.views.empty;
+package edu.pucmm.eict.vaadin14.views.inicio;
 
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H2;
-import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
@@ -11,6 +10,7 @@ import com.vaadin.flow.router.RouteAlias;
 import com.vaadin.flow.router.RouterLink;
 import edu.pucmm.eict.vaadin14.views.basico.HolaMundoVaadin;
 import edu.pucmm.eict.vaadin14.views.binder.EjemploBinder;
+import edu.pucmm.eict.vaadin14.views.calendario.Calendario;
 import edu.pucmm.eict.vaadin14.views.crud.EjemploCrud;
 import edu.pucmm.eict.vaadin14.views.grid.EjemploGrid;
 import edu.pucmm.eict.vaadin14.views.layouts.Vista1Layout;
@@ -23,9 +23,9 @@ import edu.pucmm.eict.vaadin14.views.urls.ListarRutas;
 @RouteAlias(value = "", layout = MainView.class)
 @PageTitle("Empty")
 @CssImport("styles/views/empty/empty-view.css")
-public class EmptyView extends Div {
+public class InicioView extends Div {
 
-    public EmptyView() {
+    public InicioView() {
         setId("empty-view");
         crearRutas();
     }
@@ -45,6 +45,7 @@ public class EmptyView extends Div {
         caja.add(new RouterLink("Listar todas las rutas", ListarRutas.class));
         caja.add(new RouterLink("CRUD", EjemploCrud.class));
         caja.add(new RouterLink("Ejemplo de Layout", Vista1Layout.class));
+        caja.add(new RouterLink("Ejemplo de Calendario", Calendario.class));
         add(caja);
     }
 
