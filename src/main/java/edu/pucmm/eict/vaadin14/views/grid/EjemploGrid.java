@@ -46,16 +46,16 @@ public class EjemploGrid extends VerticalLayout {
 
         
         //Campo complejo.
-        tabla.addColumn(new ComponentRenderer<>(person -> {
+        tabla.addColumn(new ComponentRenderer<>(estudiante -> {
 
             // 
             TextField name = new TextField("Nombre");
-            name.setValue(person.getNombre());
+            name.setValue(estudiante.getNombre());
 
             // button for saving the name to backend
             Button update = new Button("Actualizar", event -> {
-                person.setNombre(name.getValue());
-                tabla.getDataProvider().refreshItem(person);
+                estudiante.setNombre(name.getValue());
+                tabla.getDataProvider().refreshItem(estudiante);
             });
 
             // button that removes the item

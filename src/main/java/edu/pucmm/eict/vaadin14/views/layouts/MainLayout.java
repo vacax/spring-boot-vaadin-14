@@ -31,7 +31,7 @@ public class MainLayout extends HorizontalLayout implements RouterLayout {
 
         //
         contenido = new Div();
-        contenido.setWidth("80%");
+        contenido.setWidth("70%");
         contenido.setHeight("100%");
         contenido.add(new Label("El contenido."));
 

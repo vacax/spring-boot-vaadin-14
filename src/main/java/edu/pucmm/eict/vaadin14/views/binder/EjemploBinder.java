@@ -53,16 +53,17 @@ public class EjemploBinder extends VerticalLayout {
         //Aplicando el binder
         binder = new Binder<>();
 
+        //La implementación basada en interfaz.
         binder.bind(nombreField, new ValueProvider<EjemploGrid.Estudiante, String>() {
                     @Override
-                    public String apply(EjemploGrid.Estudiante person) {
-                        return person.getNombre();
+                    public String apply(EjemploGrid.Estudiante estudiante) {
+                        return estudiante.getNombre();
                     }
                 },
                 new Setter<EjemploGrid.Estudiante, String>() {
                     @Override
-                    public void accept(EjemploGrid.Estudiante person, String name) {
-                        person.setNombre(name);
+                    public void accept(EjemploGrid.Estudiante estudiante, String name) {
+                        estudiante.setNombre(name);
                     }
                 });
         
