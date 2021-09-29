@@ -14,6 +14,10 @@ import java.util.Map;
 public class LeerQueryParam extends VerticalLayout implements HasUrlParameter<String> {
 
 
+
+    public LeerQueryParam() {
+    }
+
     /**
      * 
      * @param event
