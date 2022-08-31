@@ -78,7 +78,7 @@
     "lit-element": "2.5.1",
     "lit-html": "1.4.1",
     "moment": "2.24.0",
-    "moment-timezone": "0.5.28"
+    "moment-timezone": "0.5.35"
   },
   "devDependencies": {
     "babel-loader": "8.2.2",
@@ -178,7 +178,7 @@
       "lit-element": "2.5.1",
       "lit-html": "1.4.1",
       "moment": "2.24.0",
-      "moment-timezone": "0.5.28"
+      "moment-timezone": "0.5.35"
     },
     "devDependencies": {
       "babel-loader": "8.2.2",
