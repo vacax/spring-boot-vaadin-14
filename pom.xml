@@ -10,7 +10,7 @@
         <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <vaadin.version>14.7.1</vaadin.version>
+        <vaadin.version>14.10.10</vaadin.version>
     </properties>
 
     <parent>
